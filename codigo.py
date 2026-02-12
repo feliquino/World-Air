@@ -147,14 +147,14 @@ def save_settings(settings):
         json.dump(settings, f, indent=4, ensure_ascii=False)
 
 def main(page: ft.Page):
-    page.title = "World Air"
+    page.title = "Fly World - Flight calculator"
     page.bgcolor = ft.Colors.ORANGE_300
 
     # Loading screen
     def show_splash():
         page.controls.clear()
 
-        splash_image = ft.Image(src="World_Air_plane.png", width=300, height=300)
+        splash_image = ft.Image(src="Fly_World_plane.png", width=300, height=300)
         start_button = ft.Button(
             "Start button", on_click=lambda e: show_home()
         )
