@@ -1257,4 +1257,5 @@ def main(page: ft.Page):
 
     update_navigation_labels()
     show_splash()
-ft.run(main, view=ft.AppView.WEB_BROWSER, assets_dir="assets")
+ft.run(main, view=ft.AppView.WEB_BROWSER, assets_dir="assets", web_renderer="html",
+       meta_tags=[{"name": "google-site-verification", "content": "qO_ZjpLjw17b9M8ogEzAPp3Gc9C5z"}])
